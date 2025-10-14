@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Blog – CAIR</title>
+
+    <!--Core Styles-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .hero-section { position:relative; background: linear-gradient(160deg,#522398 0%, #331970 50%, #150c25 100%); color:#fff; text-align:center; padding:15rem 1rem; overflow:hidden; }
+        #particles-hero { position:absolute; top:0; left:0; width:100%; height:100%; z-index:0; }
+        .hero-section .container { position:relative; z-index:1; margin-top:5rem; }
+        .section-title { color:#7933e1; font-weight:600; margin-bottom:1.5rem; }
+        .update-box { background:#150c25; color:#fff; border-left:6px solid #7933e1; box-shadow:0 3px 8px rgba(0,0,0,.3); padding:2rem; margin-bottom:1.5rem; transition: box-shadow 0.3s ease; }
+        .update-box:hover { box-shadow:0 0 15px rgba(255,255,255,0.8); }
+        .member-card { background:#150c25; color:#fff; border:1px solid #7933e1; box-shadow:0 2px 6px rgba(0,0,0,.4); padding:1.5rem; transition: box-shadow 0.3s ease; }
+        .member-card:hover { box-shadow:0 0 15px rgba(255,255,255,0.8); }
+        .member-card:hover { box-shadow:0 5px 12px rgba(0,0,0,.15); transition:.2s; }
+        .member-card .text-muted { color:#b0b8c0 !important; }
+        .icons { color:#7933e1; text-decoration:none; transition:text-shadow 0.3s ease; }
+        .icons:hover { text-shadow:0 0 8px rgba(255,255,255,0.9); }
+        .icons i { font-size:1.4rem; }
+        .navbar-nav .nav-link { transition:text-shadow 0.3s ease; }
+        .navbar-nav .nav-link:hover { text-shadow:0 0 8px rgba(255,255,255,0.9); }
+        .updates-section { background-color:#111219; }
+        .team-section { background-color:#111219; }
+        /* Navbar color override */
+        .navbar-dark { background-color: #150c25 !important; }
+        .navbar { height: 100px; }
+        .navbar .container { padding-top: 1rem; }
+        .navbar-brand { margin-left: 0; }
+    </style>
+</head>
+<body>
+    <!--Header-->
+        <div class="row fixed-top header mx-auto">
+        <!--Nav-->
+            <nav class="navbar navbar-expand-lg py-3">
+                <a class="navbar-brand ms-3 ms-md-5" href="https://www.aigcu.org"><img class="logo" src="images/whiteLogo.png" alt=""></a>
+                <button class="navbar-toggler ml-auto me-3 navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end me-4" id="navbarNav">
+                  <ul class="navbar-nav ms-3 mt-3 ms-lg-0 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#updates">Updates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>  
+        </div>
+
+    <!--Hero / Project Info-->
+    <section class="hero-section" id="project">
+        <div id="particles-hero"></div>
+        <div class="container">
+            <h1 class="display-5 fw-bold" id="projectName">Amazing AI Project</h1>
+            <p class="lead mt-3" id="projectTagline">Building state-of-the-art models for everyone.</p>
+        </div>
+    </section>
+
+    <!--Continuous Blog / Update Box-->
+    <section id="updates" class="updates-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Project Updates</h2>
+            <div class="update-box mx-auto" style="max-width:850px;">
+                <p class="mb-0" id="projectUpdate">Sept 16, 2025 — We just achieved a 5× training speed-up after optimizing our data pipeline. Stay tuned for more!</p>
+            </div>
+            <div class="update-box mx-auto" style="max-width:850px;">
+                <p class="mb-0" id="projectUpdate">Sept 16, 2025 — We just achieved a 5× training speed-up after optimizing our data pipeline. Stay tuned for more!</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Team Members-->
+    <section class="py-5 team-section" id="team">
+        <div class="container">
+            <h2 class="section-title text-center">Meet the Team</h2>
+            <div class="row g-4 justify-content-center">
+                <!--Member Loop-->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="member-card text-center h-100">
+                        <h5 class="fw-bold mb-1">Member 1</h5>
+                        <p class="text-muted mb-2">Computer Science</p>
+                        <div>
+                            <a href="#" class="icons me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="icons me-2"><i class="fab fa-github"></i></a>
+                            <a href="mailto:member1@example.com" class="icons"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="member-card text-center h-100">
+                        <h5 class="fw-bold mb-1">Member 2</h5>
+                        <p class="text-muted mb-2">Data Science</p>
+                        <div>
+                            <a href="#" class="icons me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="icons me-2"><i class="fab fa-github"></i></a>
+                            <a href="mailto:member2@example.com" class="icons"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="member-card text-center h-100">
+                        <h5 class="fw-bold mb-1">Member 3</h5>
+                        <p class="text-muted mb-2">Software Engineering</p>
+                        <div>
+                            <a href="#" class="icons me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="icons me-2"><i class="fab fa-github"></i></a>
+                            <a href="mailto:member3@example.com" class="icons"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="member-card text-center h-100">
+                        <h5 class="fw-bold mb-1">Member 4</h5>
+                        <p class="text-muted mb-2">IT Management</p>
+                        <div>
+                            <a href="#" class="icons me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="icons me-2"><i class="fab fa-github"></i></a>
+                            <a href="mailto:member4@example.com" class="icons"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="member-card text-center h-100">
+                        <h5 class="fw-bold mb-1">Member 5</h5>
+                        <p class="text-muted mb-2">IT Management</p>
+                        <div>
+                            <a href="#" class="icons me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="icons me-2"><i class="fab fa-github"></i></a>
+                            <a href="mailto:member4@example.com" class="icons"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="member-card text-center h-100">
+                        <h5 class="fw-bold mb-1">Member 6</h5>
+                        <p class="text-muted mb-2">IT Management</p>
+                        <div>
+                            <a href="#" class="icons me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="icons me-2"><i class="fab fa-github"></i></a>
+                            <a href="mailto:member4@example.com" class="icons"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-dark text-center text-white py-3">
+        <div class="container">
+            <small>&copy; 2025 — Canyon AI Research</small>
+        </div>
+    </footer>
+
+    <!--JS Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-hero", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#7933e1" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                line_linked: { enable: true, distance: 150, color: "#7933e1", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2 }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" } },
+                modes: { repulse: { distance: 100, duration: 0.4 } }
+            },
+            retina_detect: true
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

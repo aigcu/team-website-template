@@ -1,0 +1,200 @@
+/*Global styles*/
+html
+{
+    overflow-x: hidden !important;
+    background-color: #522398;
+    font-family: 'Montserrat';
+    max-width: 100%;
+}
+body
+{
+    margin: 0;
+    background-color: #150c25;
+}
+p
+{
+ font-family: 'Montserrat';
+ font-size: 1.2rem;
+ color: #848884;
+}
+
+/*Background*/
+#particles-js {
+    width: 100%;
+    height: 80vh;
+    background-color: #522398;
+    background-image: url("images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; 
+    box-shadow: inset 0 0 20px #150c25;
+}
+
+/*Controls the upper nav/ header*/
+.header
+{
+    height: 85px;
+    background-color: #150c25 !important;
+    font-family: 'Montserrat';
+}
+.headingText 
+{
+    color: white;
+}
+.navbarStyle 
+{
+    background-color: #150c25; 
+}
+.logo
+{
+    width: 200px;
+}
+.navbar 
+{
+    background-color: #150c25;
+}
+.nav-link
+{
+    color: white !important;
+}
+.navi
+{
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #522398;
+    background-color: #111219;
+    font-size: 1.1rem;
+}
+
+/*Main title*/
+.container-head
+{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    color: #111219;
+}
+.title-head
+{
+    font-family: 'Montserrat';
+}
+.joinBtn
+{
+    border: 5px solid white;
+    height: 65px;
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #7933e1;
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+@media screen and (max-width: 750px)
+{
+    .joinBtn
+    {
+        width: 80%;
+    }
+    .container-head
+    {
+        top: 60%;
+    }
+}
+.joinText 
+{
+    color: #7933e1;
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-decoration: none;
+}
+.icons
+{
+   color: #522398;
+   text-decoration: none;
+}
+.line
+{
+    text-decoration: none;
+}
+.eventCards 
+{
+    color: white !important;
+    background-color: #7933e1 !important; 
+}
+/*Main content*/
+.align
+{
+    
+    background-color: #150c25;
+}
+.main
+{
+    color: white;
+}
+
+.banner{
+    background-color: #7933e1;
+    box-shadow: inset 0 0 10px #150c25;
+}
+
+li
+{
+    font-size: 1.3rem;
+    padding-right: 1.1rem;
+    color: white;
+    list-style: none;
+}
+.projs 
+{
+    color:#7933e1;
+    margin-top: 50px !important;
+    font-size: 1.3rem;
+}
+.gist-data
+{
+    background-color: #7933e1 !important;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white !important; 
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.gist-data
+{
+    color: #150c25;
+}
+.profiles
+{
+    border-radius: 60%;
+    height: 200px;
+}
+.leadership-heads
+{
+    color: white;
+}
+.graph
+{
+    width: 80%;
+    height: auto;
+}
+.footImage
+{
+    width: 100%;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 400px;
+    object-fit: cover;   /* fills box, crops excess */
+    object-position: center; /* crop from center */
+}
+
+
+
